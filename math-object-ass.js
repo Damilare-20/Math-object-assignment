@@ -10,4 +10,4 @@ function computeBased() {
     let result = minValue * (firstNumber + secondNumber);
 
     document.getElementById('result').innerHTML = `The first generated number is ${firstNumber} and the second generated number is ${secondNumber}. The minimum number between the two is ${minValue}. The computation based on the assignment is ${result}`;
-} 
+}  
