@@ -1,13 +1,13 @@
-function generateRandom(min, max){
+function getRandomNumber(min, max){
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 
-function computeHighest(){
-    let myRandom1 = generateRandom(1, 100);
-    let myRandom2 = generateRandom(1, 100);
-    let min = Math.min(myRandom1, myRandom2);
-    let result = min * (myRandom1 + myRandom2);
+function computeBased() {
+    let firstNumber = getRandomNumber(1, 100);
+    let secondNumber = getRandomNumber(1, 100);
+    let minValue = Math.min(firstNumber, secondNumber);
+    let result = minValue * (firstNumber + secondNumber);
 
-    document.querySelector('#result2').innerHTML = `The first generated number is ${myRandom1} and the second generated number is ${myRandom2}. The minimum number between the two is ${min}. The computation based on the assignment is ${result}`;
-}
+    document.getElementById('result').innerHTML = `The first generated number is ${firstNumber} and the second generated number is ${secondNumber}. The minimum number between the two is ${minValue}. The computation based on the assignment is ${result}`;
+} 
